@@ -1,0 +1,192 @@
+/* General styles */
+
+body { 
+    background-color: #17252A; 
+    color: #FEFFFF;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+button {
+    font-family: 'Trebuchet MS', sans-serif;
+    border-color: #3d3d3d;
+    color: #1d1d1d;
+    background-color: #ffffff;
+    font-size: 15.5px;
+    padding: 4px;
+}
+
+div.a {
+    line-height: 30px;
+}
+
+fieldset {
+    width: 300px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    width: 690px;
+    color: #ffffff;
+    font-size: 30px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 0 #000000, -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000;
+}
+
+input {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 15.5px;
+}
+
+legend {
+    font-size: 17px;
+}
+
+/* Password generator page */
+.container-index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.9cm
+}
+
+#copy {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px; 
+}
+
+#copy:hover {
+    background-color: #0052aa; 
+}
+
+#generatebutton {
+    margin-top: 0.9cm;
+    padding: 12px 20px;
+    font-size: 18.5px;
+    border-radius: 15px;
+}
+
+#generatebutton:hover {
+    background-color: #c5c5c5; 
+}
+
+#generatebutton:active {
+    border-color: #ffffff;
+}
+
+#generatedPassword {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    width: 500px;
+    height: 20px;
+    font-family: 'Menlo', monospace;
+    font-size: 16.5px;
+}
+
+#length {
+    width: 50px;
+}
+
+#loginbutton {
+    margin-top: 0.2cm;
+}
+
+#loginbutton:hover {
+    background-color: #c5c5c5; 
+}
+
+#loginbutton:active {
+    border-color: #ffffff;
+}
+  
+/* Login page */
+
+#loginbtn {
+    width: 100%;
+    margin-bottom: 0.2cm;
+}
+
+#loginbtn:hover, #registerbtn:hover {
+    background-color: #c5c5c5;
+}
+
+#loginbtn:active, #registerbtn:active {
+    border-color: #ffffff;
+}
+
+#loginScreen {
+    margin-top: 7.49cm;
+}
+
+#passwordField {
+    margin-bottom: 0.4cm;
+}
+
+#passwordLabel {
+    margin-right: 0.14cm;
+    margin-bottom: 0.4cm;
+}
+
+#registerbtn {
+    margin-left: 26px;
+}
+
+#rememberMe {
+    margin-right: 30px;   
+}
+
+/* Registration screen */ 
+#emailRegField {
+    margin-left: 0.06cm;
+}
+
+#regScreen {
+    margin-top: 4.4cm;
+}
+
+#passwordRegField {
+    margin-right: 0.6cm;
+    margin-bottom: 0.4cm;
+}
+
+#usernamereg {
+    margin-right: 0.777cm;
+}
+
+#usernamereglabel {
+    display: inline-block;
+}
+
+/* Home page */
+.password-entry {
+    margin-bottom: 10px; /* Adjust spacing between entries */
+    font-weight: bold;
+    color: #777;
+}
+
+.scrollable-content {
+    max-height: 200px; /* Adjust the height as needed */
+    overflow-y: auto;
+}
+
+#homepage {
+    margin-top: 2.9cm;
+}
+
+#savepasswordField {
+    margin-right: 0.24cm;
+    margin-bottom: 0.4cm;
+}
+
+/* Profile page */
+#profilepage {
+    margin-top: 2.9cm;
+}

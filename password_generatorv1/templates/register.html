@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator Registration</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <main>
+        <form action="{{ url_for('register') }}" method="POST" autocomplete="off">
+            <div class="container-reg">
+              <h1>Register</h1>
+              <p>Please fill in this form to create an account.</p>
+              <hr>
+              <fieldset id="regScreen">
+              <label for="email">Email: </label>
+              <input id="emailRegField" type="text" placeholder="Enter Email" name="email" id="email" required>
+              <br>
+              <label id="usernamereglabel" for="username">Username: </label>
+              <input id="usernamereg" type="username" placeholder="Username" name="username" id="username" required>
+              <br>
+              <label for="password">Password: </label>
+              <input id="passwordRegField" type="password" placeholder="Enter Password" name="password" id="password" required>
+              <br>
+              <div class="msg">{{ msg }}</div>
+              <button type="submit" class="registerbtn">Register</button>
+            </div>
+            
+            <div class="container signin">
+              <p>Already have an account? <a href="{{ url_for('tologin')}}">Sign in</a>.</p>
+            </div>
+            </fieldset>
+          </form>
+    </main>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

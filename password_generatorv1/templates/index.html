@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header>
+        <h1>Password Generator</h1>
+    </header>
+    <main>
+        <form id="passwordForm" action="/generate-password" method="POST">
+            <div class="container-index">
+            <input type="text" id="generatedPassword" readonly>
+            <button id="copy" onclick="copyText(event)"><span class="material-symbols-outlined">content_copy</span></button>
+            </div>
+            <fieldset>
+                <legend>Specify Password Elements</legend>
+                <div class="a"><label for="length">Password length (1-256):</label>
+                <input id="lengthslider" type ="range" min="1" max="256" step="1" required>
+                <input type="number" id="length" name="length" min="1" max="256" step="1" required>
+                <br>
+                <input type="checkbox" id="lowercase" name="lowercase" value="y" checked>
+                <label for="lowercase">Include lowercase characters</label>
+                <br>
+                <input type="checkbox" id="uppercase" name="uppercase" value="y" checked>
+                <label for="uppercase">Include uppercase characters</label>
+                <br>
+                <input type="checkbox" id="numbers" name="numbers" value="y" checked>
+                <label for="numbers">Include numbers</label>
+                <br>
+                <input type="checkbox" id="symbols" name="symbols" value="y" checked>
+                <label for="symbols">Include symbols</label>
+                <br>
+                </div>
+            </fieldset>
+            <button id="generatebutton" type="button" onclick="generatePassword(event)">Generate Password</button>
+            <br>
+            <button id="loginbutton" type="button" onclick="document.location='{{ url_for('tologin') }}'">Save Passwords</button>
+        </form>
+    </main>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h2>Home Page</h2>
+    <p>Welcome back, {{ username }}!</p>
+
+    <form action="/save-password" method="post">
+        <fieldset id="homepage">
+        <label for="website">Website:</label>
+        <input type="text" id="website" name="website" required>
+        <br>
+        <label for="password">Password:</label>
+        <input id="savepasswordField" type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Save Password</button>
+        </fieldset>
+    </form>
+
+    <h2>Saved Passwords</h2>
+    <div class="scrollable-content">
+        {% for password in passwords %}
+            <div class="password-entry">
+                <div class="website-name">{{ password['website_name'] }}</div>
+                <div class="password">{{ password['password'] }}</div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
