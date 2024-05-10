@@ -10,7 +10,7 @@ My first project: a password generator and storage system.
 ## Built With
 - [Python](https://www.python.org/) - Backend development
 - [Flask](https://flask.palletsprojects.com/) - Web framework used for building the web application
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Frontend interactivity.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Frontend interactivity
 - [HTML/CSS](https://developer.mozilla.org/en-US/docs/Web/HTML) - Markup and styling for the frontend
 - [MySQL](https://www.mysql.com/) - Database management system used for storing passwords securely
 
