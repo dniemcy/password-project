@@ -3,8 +3,8 @@ My first project: a password generator and storage system.
 
 ## Features
 * **Password Generation:** Generate strong passwords with customizable options.
-* **Password Storage:** Store passwords in a MySQL database.
-* **User Authentication:** Authenticate users to ensure secure access to stored passwords.
+* **Password Storage:** Store user-inputted logins in a MySQL database.
+* **User Authentication:** Authenticate users to ensure secure access to stored information.
 * **Password Retrieval:** Retrieve stored passwords with appropriate user authentication.
 
 ## Built With
