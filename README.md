@@ -27,3 +27,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 * This project utilizes code snippets from CodeShack (https://codeshack.io) for implementing the login system
+
+## Task List
+- [ ] Implement password encryption for the user-stored logins
+- [ ] Redesign the homepage
